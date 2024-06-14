@@ -1,0 +1,77 @@
+ul{
+  margin: auto;
+ 
+}
+nav{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.8);
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* Change the last value to adjust opacity */
+}
+.btn1{
+  background-color: rgba(0, 0, 0, 0.8); /* Change the last value to adjust opacity */
+}
+.btn:hover{
+  background-color: rgba(223, 0, 0, 0.8); /* Change the last value to adjust opacity */
+  border: 2px solid black;
+}
+
+#hero-section{
+    background-image: url("assests/pexels-photo-616401.jpeg");
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+.food{
+  letter-spacing: 2px ;
+  padding: 4px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+ 
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}

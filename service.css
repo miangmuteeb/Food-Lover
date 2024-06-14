@@ -1,0 +1,45 @@
+/* Global styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.menu-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-details ul li {
+    margin-bottom: 5px;
+}
+.food{
+    letter-spacing: 2px ;
+    padding: 4px 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    animation: myAnim 2s ease 0s 1 normal forwards;}
+ul{
+    margin: auto;
+   
+  }
+  nav{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.8);
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Change the last value to adjust opacity */
+  }
+  #hero-section{
+    background-image: url("assests/pexels-photo-616401.jpeg");
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }

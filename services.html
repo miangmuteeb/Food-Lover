@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="service.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assests/OIG3.jpeg" alt="" height="50px" width="50px" style="border-radius: 75% ; border: 2px solid black;  " >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: rgb(255, 255, 255);">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="color: rgb(255, 255, 255);" >Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html" style="color: rgb(255, 255, 255);" >Order Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <div id="hero-section" class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center animated-text">
+                        <span id="" class="d-inline-block mb-1 food mt-4"> Our Menu </span>
+                        <span id="fitness-text "></span>
+                    </h1>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row mt-5" id="card-section">
+        <div class="col-md-3  mb-4">
+            <div class="card">
+                <img src="assests/Pizza.jpg" class="card-img-top" alt="Pizza Image">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Delicious varieties of pizza to satisfy your cravings.</p>
+                    <button class="btn btn-primary" onclick="showPizzaDetails()">View Pizza Menu</button>
+                    <div id="pizzaDetails" class="menu-details">
+                        <h6>Varieties:</h6>
+                        <ul>
+                            <li>Margherita - $10</li>
+                            <li>Pepperoni - $12</li>
+                            <li>Veggie Supreme - $11</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3  mb-4">
+            <div class="card">
+                <img src="assests/burger.jpg" height="200px" class="card-img-top" alt="Burger Image">
+                <div class="card-body">
+                    <h5 class="card-title">Burgers</h5>
+                    <p class="card-text">Juicy burgers that will leave you wanting more.</p>
+                    <button class="btn btn-primary" onclick="showBurgerDetails()">View Burger Menu</button>
+                    <div id="burgerDetails" class="menu-details">
+                        <h6>Varieties:</h6>
+                        <ul>
+                            <li>Classic Burger - $9</li>
+                            <li>Cheeseburger - $10</li>
+                            <li>Bacon Burger - $11</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3  mb-4">
+            <div class="card">
+                <img src="assests/fries.jpg" class="card-img-top" alt="Fries Image">
+                <div class="card-body">
+                    <h5 class="card-title">Fries</h5>
+                    <p class="card-text">Crispy and golden fries served hot and fresh.</p>
+                    <button class="btn btn-primary" onclick="showFriesDetails()">View Fries Menu</button>
+                    <div id="friesDetails" class="menu-details">
+                        <h6>Varieties:</h6>
+                        <ul>
+                            <li>Regular Fries - $5</li>
+                            <li>Cheese Fries - $7</li>
+                            <li>Chili Cheese Fries - $8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3  mb-4">
+            <div class="card">
+                <img src="assests/shawarma.jpg" height="200px" class="card-img-top" alt="Shawarma Image">
+                <div class="card-body">
+                    <h5 class="card-title">Shawarmas</h5>
+                    <p class="card-text">Flavorful shawarmas wrapped to perfection.</p>
+                    <button class="btn btn-primary" onclick="showShawarmaDetails()">View Shawarma Menu</button>
+                    <div id="shawarmaDetails" class="menu-details">
+                        <h6>Varieties:</h6>
+                        <ul>
+                            <li>Chicken Shawarma - $8</li>
+                            <li>Beef Shawarma - $9</li>
+                            <li>Falafel Wrap - $7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<hr>
+<!-- Footer 2 - Bootstrap Brain Component -->
+<footer class="footer">
+
+    <!-- Widgets - Bootstrap Brain Component -->
+    <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+            <div class="widget">
+              <a href="#!">
+                <img src="assests/OIG3.jpeg" alt="BootstrapBrain Logo" width="175" height="157">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+            <div class="widget">
+              <h4 class="widget-title mb-4">Get in Touch</h4>
+              <address class="mb-4">8014 Edith Blvd NE, Albuquerque, New York, United States</address>
+              <p class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#">(505) 792-2430</a>
+              </p>
+              <p class="mb-0">
+                <a class="link-secondary text-decoration-none" href="mailto:demo@yourdomain.com">foodlover.surge.sh</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+            <div class="widget">
+              <h4 class="widget-title mb-4">Learn More</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="index.html" class="link-secondary text-decoration-none">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a href="services.html" class="link-secondary text-decoration-none">Services</a>
+                </li>
+                <li class="mb-2">
+                  <a href="order.html" class="link-secondary text-decoration-none">Order Now</a>
+                
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+    <!-- Copyright - Bootstrap Brain Component -->
+    <div class="bg-light py-4 py-md-5 py-xl-8 border-top border-light-subtle">
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-md-0 align-items-md-center">
+          <div class="col-xs-12 col-md-7 order-1 order-md-0">
+            <div class="copyright text-center text-md-start">
+              &copy; 2024. All Rights Reserved.
+            </div>
+            <div class="credits text-secondary text-center text-md-start mt-2 fs-8">
+              Built by <a href="http://sassy-direction.surge.sh/" class="link-secondary text-decoration-none">Muteeb Ramzan</a>  
+            </div>
+          </div>
+  
+          <div class="col-xs-12 col-md-5 order-0 order-md-1">
+            <div class="social-media-wrapper">
+              <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
+                <li class="me-3">
+                 
+                  </a>
+                </li>
+                <li class="me-3">
+                  
+            
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+       
+    <script src="service.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
